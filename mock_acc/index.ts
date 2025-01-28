@@ -68,6 +68,8 @@ function getCarData(): Buffer {
     writer.WriteUInt16(1);
     // Driver Index
     writer.WriteUInt16(1);
+    // Driver count
+    writer.WriteBytes([1]);
     // Gear
     writer.WriteBytes([6]);
     // pos x
