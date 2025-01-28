@@ -1,14 +1,14 @@
 import { createSocket } from 'dgram';
 import { api } from './api'
 import { accMessageParser } from './acc-message-parser';
+import 'dotenv/config'
 
-const PORT = 9000;
-const LOCAL_PORT = 9001;
-//const HOST = '192.168.178.24';
- const HOST = '127.0.0.1';
-const DISPLAY_NAME = 'your';
-const CONNECTION_PASSWORD = 'asd';
-const COMMAND_PASSWORD = '';
+const PORT = parseInt(process.env.ACC_PORT ?? "0");
+const LOCAL_PORT = parseInt(process.env.LOCAL_PORT ?? "0");
+const HOST = process.env.ACC_HOST;
+const DISPLAY_NAME = process.env.DISPLAY_NAME ?? "DisplayName";
+const CONNECTION_PASSWORD = process.env.CONNECTION_PASSWORD ?? "ConnectionPassword";
+const COMMAND_PASSWORD = process.env.COMMAND_PASSWORD ?? "CommandPassword";
 
 const acc = createSocket('udp4');
 acc.bind(LOCAL_PORT);

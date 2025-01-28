@@ -9,6 +9,7 @@
   "author": "",
   "dependencies": {
     "binutils": "^0.1.0",
+    "dotenv": "^16.4.7",
     "utf8-bytes": "^0.0.1"
   },
   "devDependencies": {
