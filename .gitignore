@@ -1,2 +1,7 @@
 node_modules/
 .next/
+dist/
+
+
+.nx/cache
+.nx/workspace-data

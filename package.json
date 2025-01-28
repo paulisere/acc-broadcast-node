@@ -1,0 +1,24 @@
+{
+  "name": "acc-broadcast-node",
+  "version": "1.0.0",
+  "description": "Assetto corsa competizione broadcast in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulisere/acc-broadcast-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulisere/acc-broadcast-node/issues"
+  },
+  "homepage": "https://github.com/paulisere/acc-broadcast-node#readme",
+  "devDependencies": {
+    "nx": "20.4.0"
+  },
+  "nx": {},
+  "workspaces": ["packages/*"]
+}
