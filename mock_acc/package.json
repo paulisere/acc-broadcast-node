@@ -1,19 +1,19 @@
 {
-  "name": "backend",
+  "name": "mock_acc",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "ISC",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node index.ts"
   },
   "author": "",
-  "dependencies": {
-    "binutils": "^0.1.0",
-    "dotenv": "^16.4.7",
-    "utf8-bytes": "^0.0.1"
-  },
+  "license": "ISC",
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "binutils": "^0.1.0"
   }
 }
