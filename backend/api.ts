@@ -1,4 +1,4 @@
-const constants = require('./constants');
+import { constants } from './constants'
 // TODO: Typings don't exist for this. Look to remove in future
 const binutils = require('binutils');
 const utf8 = require('utf8-bytes');

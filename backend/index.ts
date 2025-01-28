@@ -4,8 +4,8 @@ import { accMessageParser } from './acc-message-parser';
 
 const PORT = 9000;
 const LOCAL_PORT = 9001;
-const HOST = '192.168.178.24';
-// const HOST = '127.0.0.1';
+//const HOST = '192.168.178.24';
+ const HOST = '127.0.0.1';
 const DISPLAY_NAME = 'your';
 const CONNECTION_PASSWORD = 'asd';
 const COMMAND_PASSWORD = '';

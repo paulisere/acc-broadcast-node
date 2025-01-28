@@ -1,4 +1,4 @@
-const constants = {
+export const constants = {
     outboundMessageTypes: {
         REGISTER_COMMAND_APPLICATION: 1,
         UNREGISTER_COMMAND_APPLICATION: 9,
@@ -22,5 +22,4 @@ const constants = {
         TRACK_DATA: 5,
     },
 
-}
-module.exports = constants;
+};

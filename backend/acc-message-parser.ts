@@ -1,6 +1,7 @@
 // TODO: Typings don't exist for this. Look to remove in future
 const binutils = require('binutils'); 
 import { api } from './api'
+import { constants } from './constants'
 
 export const accMessageParser = (message: Buffer) => {
 
