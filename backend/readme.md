@@ -2,9 +2,14 @@
 
 *You need to enable udp port on broadcast.json on your windows documents folder*
 
-Tested with nodejs `v10.7.0` and yarn version `1.9.2`.
+## TODOs ##
 
-![terminal](backend.gif)
+- Need to re-implement connection to frontend
+    - It was using socket.io - Replace this with websocket to be more standard (don't think socket.io is really needed for this)
+- Replace binutils with something else that allows type checking
+- Make an offline testing tool to test without a running instance of ACC
+
+## Some old readme stuff ##
 
 This backend connects to ACC UDP port (default 9000) and following the API of 0.4. It exposes via websocket on port 6767 the following info:
 - gear
@@ -30,10 +35,7 @@ For the moment is only implemented partially `REALTIME_CAR_UPDATE` to get the fo
 This was tested on practice mode, so on a race it might not work ¯\_(ツ)_/¯
 
 ## Build and start
-`yarn install`
+`npm install`
 
-`yarn run start`
+`npm run start`
 
-### running local upd endpoint for debugging messages
-
-`python udp_server.py`

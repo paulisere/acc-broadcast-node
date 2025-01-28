@@ -1,16 +1,17 @@
 const constants = require('./constants');
+// TODO: Typings don't exist for this. Look to remove in future
 const binutils = require('binutils');
 const utf8 = require('utf8-bytes');
 
-const api = {
+export const api = {
 
-    readString: (reader) => {
+    readString: (reader: any) => {
         const length = reader.ReadUInt16();
         const bytes = reader.ReadBytes(length);
         return bytes.toString('utf8');
     },
 
-    requestConnection: (displayName, connectionPassword, commandPassword) => {
+    requestConnection: (displayName: string, connectionPassword: string, commandPassword: string) => {
         const displayNameArray = utf8(displayName);
         const connectionPasswordArray = utf8(connectionPassword);
         const commandPasswordArray = utf8(commandPassword);
@@ -31,5 +32,3 @@ const api = {
     },
 
 };
-
-module.exports = api;
