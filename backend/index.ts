@@ -28,5 +28,6 @@ function handleError(err: Error | null) {
     }
 }
 
+console.log(`Trying to connect to ${HOST}:${PORT}`);
 const requestConnection = api.requestConnection(DISPLAY_NAME, CONNECTION_PASSWORD, COMMAND_PASSWORD);
 acc.send(requestConnection, 0, requestConnection.length, PORT, HOST, handleError);
